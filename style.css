@@ -1,0 +1,36 @@
+div{
+    border: 5px solid green;
+    border-radius: 55px;
+    text-shadow: 1px 1px red;
+    background: linear-gradient(to right, red , yellow);
+    }
+/*sets how the first egg looks*/
+#huevo{
+    width:100px;
+    height:100px;
+    transform: translate(150px,100px);
+    }
+/*sets how the second egg looks*/
+#huevo2{
+    width:100px;
+    height:100px;
+    transform: translate(150px,100px);
+    }
+/*sets how the chicken looks*/
+#pollo{
+    width:100px;
+    height:100px;
+    transition-duration: 6s; 
+    animation-name: pollo;
+    animation-duration: 6s;
+    }
+/*transition for chicken*/
+#pollo:hover{
+    transform: rotate(360deg);
+    }
+/*animation for the chicken*/
+@keyframes pollo{
+    0%{left:0px; top:100px; opacity:0;}
+    50%{left:0px; top:50px; opacity:.5;}
+    100%{left:0px; top:0px; opacity;1;}
+    } 
